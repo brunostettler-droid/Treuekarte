@@ -108,6 +108,10 @@ h1{margin-bottom:24px}@media(max-width:699px){h1{margin-bottom:22px}}
 .balance,.stamps,.note,.scan,.links{position:relative;top:8px}.content > .brand{top:8px}
 
 .scan{top:16px}.content > .brand{top:16px}.links{top:12px}@media(max-width:699px){main{padding-bottom:max(12px,env(safe-area-inset-bottom))}}
+
+.qr{border:0;padding:8px;cursor:zoom-in;color:#171717}.qr img{display:block;width:100%;height:100%;object-fit:contain}.qr:focus-visible{outline:3px solid #dfbf78;outline-offset:4px}
+.qr-dialog{width:min(92vw,440px);max-height:94dvh;border:1px solid #98783d;border-radius:20px;padding:20px;background:#171211;color:#fff3d6;text-align:center;box-sizing:border-box}
+.qr-dialog::backdrop{background:#000d}.qr-dialog h2{font:700 22px Arial;margin:0 0 16px}.qr-large{background:white;border-radius:12px;padding:16px;width:min(100%,60dvh);aspect-ratio:1;margin:0 auto}.qr-large img,.qr-large svg{display:block;width:100%;height:100%;object-fit:contain}.qr-dialog p{font:14px Arial;line-height:1.5;margin:14px 0}.qr-close{min-height:46px;width:100%;border:1px solid #a83b3b;background:#77141c;color:#fff0ce;border-radius:10px;font:700 16px Arial;cursor:pointer}
 </style></head>
 <body><main>
 
@@ -118,10 +122,15 @@ h1{margin-bottom:24px}@media(max-width:699px){h1{margin-bottom:22px}}
 <div class="stamps" aria-label="10 verfügbare Mittagsmenüs">
 <div class="stamp"><i class="thai-head" aria-hidden="true"></i><span>1</span></div><div class="stamp"><i class="thai-head" aria-hidden="true"></i><span>2</span></div><div class="stamp"><i class="thai-head" aria-hidden="true"></i><span>3</span></div><div class="stamp"><i class="thai-head" aria-hidden="true"></i><span>4</span></div><div class="stamp"><i class="thai-head" aria-hidden="true"></i><span>5</span></div><div class="stamp"><i class="thai-head" aria-hidden="true"></i><span>6</span></div><div class="stamp"><i class="thai-head" aria-hidden="true"></i><span>7</span></div><div class="stamp"><i class="thai-head" aria-hidden="true"></i><span>8</span></div><div class="stamp"><i class="thai-head" aria-hidden="true"></i><span>9</span></div><div class="stamp"><i class="thai-head" aria-hidden="true"></i><span>10</span></div>
 </div><p class="note">Nur Take-away</p>
-<div class="scan"><div class="qr" aria-label="QR-Platzhalter für die Gestaltungsvorschau"><svg viewBox="0 0 84 84" aria-hidden="true"><g fill="#191816"><path d="M0 0h28v28H0zm4 4v20h20V4zM56 0h28v28H56zm4 4v20h20V4zM0 56h28v28H0zm4 4v20h20V60z" fill-rule="evenodd"/><path d="M8 8h12v12H8zm56 0h12v12H64zM8 64h12v12H8zM36 0h8v8h-8zm0 16h12v8H36zm0 16h8v12h-8zm12 4h12v8H48zm16 0h8v8h-8zm12 0h8v16h-8zM0 36h16v8H0zm20 0h8v16h-8zM4 48h8v4H4zm28 0h12v8H32zm16 0h8v16h-8zm12 0h12v8H60zm16 12h8v12h-8zM36 64h8v20h-8zm12 8h8v12h-8zm12-12h8v12h-8zm0 16h12v8H60zm16 4h8v4h-8z"/></g></svg></div><div><h2>Vorzeigen & geniessen</h2><p>Beim Abholen scannen lassen.<br>Wir buchen deine Menüs ab.</p><p class="id"></p></div></div><div class="brand"><img src="assets/logo.png" alt="thai food kurier – Heimliefer- und Partyservice"><span class="founded">Gegr. 1995</span></div></div></article>
+<div class="scan"><button class="qr" type="button" aria-label="QR-Code vergrössern" aria-haspopup="dialog"><svg viewBox="0 0 84 84" aria-hidden="true"><g fill="#191816"><path d="M0 0h28v28H0zm4 4v20h20V4zM56 0h28v28H56zm4 4v20h20V4zM0 56h28v28H0zm4 4v20h20V60z" fill-rule="evenodd"/><path d="M8 8h12v12H8zm56 0h12v12H64zM8 64h12v12H8zM36 0h8v8h-8zm0 16h12v8H36zm0 16h8v12h-8zm12 4h12v8H48zm16 0h8v8h-8zm12 0h8v16h-8zM0 36h16v8H0zm20 0h8v16h-8zM4 48h8v4H4zm28 0h12v8H32zm16 0h8v16h-8zm12 0h12v8H60zm16 12h8v12h-8zM36 64h8v20h-8zm12 8h8v12h-8zm12-12h8v12h-8zm0 16h12v8H60zm16 4h8v4h-8z"/></g></svg></button><div><h2>Vorzeigen & geniessen</h2><p>Beim Abholen scannen lassen.<br>Wir buchen deine Menüs ab.</p><p class="id"></p></div></div><div class="brand"><img src="assets/logo.png" alt="thai food kurier – Heimliefer- und Partyservice"><span class="founded">Gegr. 1995</span></div></div></article>
 <nav class="links" aria-label="Kontakt und Webshop">
 <a href="https://thaifoodkurier.simplywebshop.ch/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M3 9h18l-2-6H5L3 9zm2 0v12h14V9M9 21v-7h6v7M3 9c0 4 5 4 6 0 0 4 6 4 6 0 1 4 6 4 6 0"/></svg>Webshop</a>
 <a href="mailto:info@thaifoodkurier.ch"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m3 6 9 7 9-7"/></svg>E-Mail</a>
 <a href="tel:+41313825959"><svg viewBox="0 0 24 24"><path d="M5 3h4l2 5-3 2c2 3 3 4 6 6l2-3 5 2v4c0 2-2 3-4 2C9 19 5 15 3 7 2 5 3 3 5 3z"/></svg>Anrufen</a>
 </nav><p class="footer"><strong>thai food kurier</strong><br>031 382 59 59 · info@thaifoodkurier.ch<br>Gestaltungsvorschau – noch keine aktive Treuekarte.</p>
-</main></body></html>
+</main><dialog class="qr-dialog" aria-labelledby="qr-title"><h2 id="qr-title">Zum Entwerten vorzeigen</h2><div class="qr-large"></div><p class="qr-status">QR-Code scannen lassen und Menüanzahl bestätigen.</p><button class="qr-close" type="button">Schliessen</button></dialog><script>
+const qrButton=document.querySelector('.qr'),qrDialog=document.querySelector('.qr-dialog');
+qrButton.addEventListener('click',()=>{if(!qrButton.querySelector('img,svg'))return;document.querySelector('.qr-large').replaceChildren(qrButton.firstElementChild.cloneNode(true));qrDialog.showModal()});
+document.querySelector('.qr-close').addEventListener('click',()=>qrDialog.close());
+qrDialog.addEventListener('click',e=>{if(e.target===qrDialog){const r=qrDialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)qrDialog.close()}});
+</script></body></html>
