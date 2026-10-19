@@ -68,6 +68,28 @@ body:before{opacity:.18}
 .content > .brand{overflow:visible}.founded{position:absolute;top:48px;left:0;width:100%;text-align:center;color:#e01a1a;font-size:12px;font-weight:700;letter-spacing:2px;text-shadow:0 1px 3px #000}.brand img{clip-path:inset(360px 0 27px 0)}
 
 .stamp span{font-size:12px}
+
+/* Die gesamte Treuekarte nutzt auf dem Handy die sichtbare Bildschirmhöhe. */
+@media(max-width:699px){
+ main{width:min(100% - 24px,430px);height:100svh;margin:0 auto;padding: max(8px,env(safe-area-inset-top)) 0 max(8px,env(safe-area-inset-bottom));display:flex;flex-direction:column;gap:6px}
+ .preview{font-size:8px;letter-spacing:1.3px;margin:0;line-height:12px}
+ .card{top:0;flex:1;min-height:0;display:flex;flex-direction:column}
+ h1{top:0;font-size:32px;line-height:1.1;margin:0 0 5px}
+ .card-price{top:0;font-size:22px;line-height:1.2;margin:0 0 5px}
+ .content{padding:0 10px;flex:1;min-height:0;display:flex;flex-direction:column}
+ .offer{font-size:12px;line-height:1.4;margin:0}
+ .balance{margin:10px 0 5px;align-items:center}.balance .number{font-size:36px}.balance .number small{font-size:18px}.balance p{font-size:11px}
+ .stamps{flex:1;min-height:110px;max-height:220px;grid-template-rows:repeat(2,minmax(0,1fr));gap:5px 8px}
+ .stamp{min-height:0;gap:4px}.thai-head{height:clamp(26px,5svh,39px);width:20px;flex-shrink:0}.stamp span{font-size:12px;line-height:14px}
+ .note{font-size:10px;line-height:1.4;margin:7px 0}
+ .scan{margin:0;padding:4px 0;gap:13px;justify-content:center}.qr{width:88px;height:88px}.qr svg{width:72px;height:72px}.scan h2{font-size:12px;margin-bottom:4px}.scan p{font-size:11px;line-height:1.4}.scan .id{margin-top:5px!important;font-size:9px!important}
+ .content > .brand{height:65px;min-height:65px;margin:3px auto 0;transform:none;flex-shrink:0}
+ .links{margin:0;gap:8px;flex-shrink:0}.links a{min-height:48px;padding:7px 4px;font-size:11px;gap:4px}.links svg{height:18px;width:18px}
+ .footer{display:none}
+}
+@media(max-width:699px) and (max-height:600px){
+ main{gap:3px}h1{font-size:28px}.balance{margin-top:5px}.balance .number{font-size:30px}.stamps{min-height:96px}.thai-head{height:26px}.note{margin:4px 0}.qr{width:76px;height:76px}.qr svg{width:64px;height:64px}
+}
 </style></head>
 <body><main>
 <p class="preview">Gestaltungsvorschau · Beispielkarte</p>
@@ -77,7 +99,7 @@ body:before{opacity:.18}
 <div class="balance"><div class="number">10 <small>/ 10</small></div><p>Menüs verfügbar</p></div>
 <div class="stamps" aria-label="10 verfügbare Mittagsmenüs">
 <div class="stamp"><i class="thai-head" aria-hidden="true"></i><span>1</span></div><div class="stamp"><i class="thai-head" aria-hidden="true"></i><span>2</span></div><div class="stamp"><i class="thai-head" aria-hidden="true"></i><span>3</span></div><div class="stamp"><i class="thai-head" aria-hidden="true"></i><span>4</span></div><div class="stamp"><i class="thai-head" aria-hidden="true"></i><span>5</span></div><div class="stamp"><i class="thai-head" aria-hidden="true"></i><span>6</span></div><div class="stamp"><i class="thai-head" aria-hidden="true"></i><span>7</span></div><div class="stamp"><i class="thai-head" aria-hidden="true"></i><span>8</span></div><div class="stamp"><i class="thai-head" aria-hidden="true"></i><span>9</span></div><div class="stamp"><i class="thai-head" aria-hidden="true"></i><span>10</span></div>
-</div><p class="note">Nur Take-away · Mehrere Menüs pro Bezug möglich</p>
+</div><p class="note">Nur Take-away</p>
 <div class="scan"><div class="qr" aria-label="QR-Platzhalter für die Gestaltungsvorschau"><svg viewBox="0 0 84 84" aria-hidden="true"><g fill="#191816"><path d="M0 0h28v28H0zm4 4v20h20V4zM56 0h28v28H56zm4 4v20h20V4zM0 56h28v28H0zm4 4v20h20V60z" fill-rule="evenodd"/><path d="M8 8h12v12H8zm56 0h12v12H64zM8 64h12v12H8zM36 0h8v8h-8zm0 16h12v8H36zm0 16h8v12h-8zm12 4h12v8H48zm16 0h8v8h-8zm12 0h8v16h-8zM0 36h16v8H0zm20 0h8v16h-8zM4 48h8v4H4zm28 0h12v8H32zm16 0h8v16h-8zm12 0h12v8H60zm16 12h8v12h-8zM36 64h8v20h-8zm12 8h8v12h-8zm12-12h8v12h-8zm0 16h12v8H60zm16 4h8v4h-8z"/></g></svg></div><div><h2>Vorzeigen & geniessen</h2><p>Beim Abholen scannen lassen.<br>Wir buchen deine Menüs ab.</p><p class="id">MUSTERKARTE · 0001</p></div></div><div class="brand"><img src="assets/logo.png" alt="thai food kurier – Heimliefer- und Partyservice"><span class="founded">Gegr. 1995</span></div></div></article>
 <nav class="links" aria-label="Kontakt und Webshop">
 <a href="https://thaifoodkurier.simplywebshop.ch/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M3 9h18l-2-6H5L3 9zm2 0v12h14V9M9 21v-7h6v7M3 9c0 4 5 4 6 0 0 4 6 4 6 0 1 4 6 4 6 0"/></svg>Webshop</a>
